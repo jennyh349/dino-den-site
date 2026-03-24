@@ -2,15 +2,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
-import Encyclopedia from './pages/Encyclopedia.jsx';
-import Timers from './pages/Timers.jsx';
-import DietFinder from './pages/DietFinder.jsx';
-import SurvivalGuide from './pages/SurvivalGuide.jsx';
-import Roster from './pages/Roster.jsx';
-import Leaderboard from './pages/Leaderboard.jsx';
-import Events from './pages/Events.jsx';
-import Tickets from './pages/Tickets.jsx';
-import Apply from './pages/Apply.jsx';
+import About from './pages/About.jsx';
+import IsleHome from './pages/the-isle/IsleHome.jsx';
+import Encyclopedia from './pages/the-isle/Encyclopedia.jsx';
+import Timers from './pages/the-isle/Timers.jsx';
+import DietFinder from './pages/the-isle/DietFinder.jsx';
+import SurvivalGuide from './pages/the-isle/SurvivalGuide.jsx';
+import Roster from './pages/the-isle/Roster.jsx';
+import Leaderboard from './pages/the-isle/Leaderboard.jsx';
+import Events from './pages/the-isle/Events.jsx';
+import Tickets from './pages/the-isle/Tickets.jsx';
+import Apply from './pages/the-isle/Apply.jsx';
 
 export default function App() {
   return (
@@ -18,15 +20,17 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/encyclopedia" element={<Encyclopedia />} />
-          <Route path="/timers" element={<Timers />} />
-          <Route path="/diet" element={<DietFinder />} />
-          <Route path="/survival" element={<SurvivalGuide />} />
-          <Route path="/roster" element={<Roster />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/tickets" element={<Tickets />} />
-          <Route path="/apply" element={<Apply />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/the-isle" element={<IsleHome />} />
+          <Route path="/the-isle/encyclopedia" element={<Encyclopedia />} />
+          <Route path="/the-isle/timers" element={<Timers />} />
+          <Route path="/the-isle/diet" element={<DietFinder />} />
+          <Route path="/the-isle/survival" element={<SurvivalGuide />} />
+          <Route path="/the-isle/roster" element={<Roster />} />
+          <Route path="/the-isle/leaderboard" element={<Leaderboard />} />
+          <Route path="/the-isle/events" element={<Events />} />
+          <Route path="/the-isle/tickets" element={<Tickets />} />
+          <Route path="/the-isle/apply" element={<Apply />} />
         </Route>
       </Routes>
     </BrowserRouter>

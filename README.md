@@ -1,48 +1,39 @@
-# 🦖 Dino Den — The Isle Evrima Community Hub
+# 🎮 Max Force Gaming — Community Hub
 
-A full-featured community website for The Isle (Evrima) built with React + Vite.
+Multi-game community website built with React + Vite. Currently hosting The Isle (Dino Den) with more games planned.
 
-## Features
+## Current Features
 
-1. **Encyclopedia** — Full species catalog with stats, abilities, tips for all 19 Evrima creatures
-2. **Growth Timers** — Real-time growth tracking with pause/resume and stage indicators
-3. **Diet Finder** — Diet reference for every species with foraging tips
-4. **Survival Guide** — Field-tested strategies from beginner to advanced
-5. **Pack Roster** — Create and manage packs/herds with member tracking
-6. **Leaderboard** — Community kill feed, survival logs, and achievement tracking
-7. **Events** — Schedule and browse upcoming server events
-8. **Tickets** — Suggestion box, bug reports, and help requests with voting
-9. **Applications** — Whitelist application system with admin review
+### MFG Main
+- Landing page with game portal
+- About Us / Staff / Community Rules (tabbed page)
 
-## Getting Started
+### The Isle — Dino Den
+1. Encyclopedia — 19 Evrima species with full profiles
+2. Growth Timers — Real-time tracking with pause/resume
+3. Diet Finder — Food sources for every species
+4. Survival Guide — Beginner to advanced strategies
+5. Pack Roster — Create and manage groups
+6. Leaderboard — Kill feed and community stats
+7. Events — Schedule and browse server events
+8. Tickets — Suggestions, reports, and help requests
+9. Applications — Whitelist system with admin review
 
+## Upcoming (Phases 2-4)
+- Community blog (any logged-in user)
+- News/announcements (admin only)
+- Server status page (auto-ping)
+- Discord OAuth login + role-based admin
+- Game-specific blog/news feeds
+
+## Deploy
 ```bash
 npm install
-npm run dev
+npm run dev        # local dev
+npm run build      # production build
 ```
 
-## Deploy to Vercel
-
-1. Push to GitHub
-2. Connect repo to [vercel.com](https://vercel.com)
-3. Deploy — Vercel auto-detects Vite
+Push to GitHub, connect to Vercel, deploy. The vercel.json handles SPA routing.
 
 ## Tech Stack
-
-- React 18
-- React Router 6
-- Vite 5
-- localStorage for data persistence
-- Prepared for Discord OAuth integration
-
-## Future: Discord Auth
-
-The site is structured to support Discord OAuth login. When ready:
-1. Create a Discord application at discord.com/developers
-2. Add OAuth2 redirect URL
-3. Implement the auth flow in `src/components/Layout.jsx` (Sign In button)
-4. Gate admin features (ticket status, application review) behind auth roles
-
-## License
-
-Built for the Dino Den community.
+React 18, React Router 6, Vite 5, localStorage (upgrading to backend in Phase 3)
